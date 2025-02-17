@@ -104,6 +104,5 @@ const getVendorById = async (req, res) => {
         console.error("Error in getVendorById:", error);
         res.status(500).json({ error: "Internal server error" });
     }
-};
+}
 
-module.exports = { vendorRegister, vendorLogin, getAllVendors, getVendorById };
